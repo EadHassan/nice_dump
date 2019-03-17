@@ -25,15 +25,20 @@ if (!function_exists('nice_dump')) {
         # List of all default options
     	extract(dump_atts(array(
     		'label'		=> 'Dump data',
+    		'json'      	=> FALSE,
     		'return'	=> 'echo',
     		'color'		=> '#aaa',
     		'bg_color'	=> '#222'
     	), $options));
     	
-        # Store dump in variable
-        ob_start();
-        var_dump($data);
-        $output = ob_get_clean();
+    	if($json == FALSE) {
+            # Store dump in variable
+            ob_start();
+            var_dump($data);
+            $output = ob_get_clean();
+    	} else {
+    	    $output = json_encode($data, JSON_PRETTY_PRINT);
+    	}
         
         # Get the URL of this file
         # It's only needed if the jQuery not defined
@@ -69,7 +74,7 @@ if (!function_exists('nice_dump')) {
         $script;
 
         # Output
-        if ($return == 'echo') {
+        if ($return == 'echo' or $return == 'json') {
             
             # remove all empty line and echo the dump data
             echo preg_replace("/(^[\r\n]*|[\r\n]+)[\s\t]*[\r\n]+/", "", $result);
