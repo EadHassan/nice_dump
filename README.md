@@ -62,7 +62,7 @@ $options = array('json' => TRUE, 'label' => 'Products list', 'bg_color' => '#1B1
 # call the function with your custom options
 nice_dump($products, $options);
 ```
-![Default Preview](https://forward-web.com/uploads/custom.png)
+![Default Preview](https://forward-web.com/uploads/custom-options.png)
 
 ### Available Options
 | Option Name        | Type            | Accepted values  | Default Value   |
