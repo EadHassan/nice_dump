@@ -99,7 +99,7 @@ if (!function_exists('nice_dump')) {
  *
  *
  * @param array $defaults Entire list of supported attributes and their defaults.
- * @param array $atts User defined attributes in shortcode tag.
+ * @param array $atts User defined attributes in nice_dump function.
  * @return array Combined and filtered attribute list.
  *
  * @package    Dump data
