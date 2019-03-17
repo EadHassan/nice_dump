@@ -64,4 +64,13 @@ nice_dump($products, $options);
 ```
 ![Default Preview](https://forward-web.com/uploads/custom.png)
 
+### Available Options
+| Option Name        | Type            | Accepted values  | Default Value   |
+| ------------------ |-----------------|------------------|---------------- |
+| labe               | String          | Any text         | Dump Data       |
+| json               | Boolean         | TRUE - FALSE     | FALSE           |
+| return             | string          | echo - return    | echo            |
+| color              | string          | HEX color        | #aaa            |
+| bg_color           | string          | HEX color        | #222            |
+
 > The function will render HTML **div tag** with toggle button using jQuery. if jQuery is not defined it will dynamically load the included jQuery file.
