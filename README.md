@@ -57,7 +57,7 @@ nice_dump($products);
 ### Usage with custom options
 ```php
 # define your options in array
-$options = array('return' => 'echo', 'label' => 'Products list');
+$options = array('json' => TRUE, 'label' => 'Products list', 'bg_color' => '#1B1464', 'color' => '#fff');
 
 # call the function with your custom options
 nice_dump($products, $options);
