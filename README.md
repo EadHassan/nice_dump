@@ -52,6 +52,7 @@ $products = array(
 ```php
 nice_dump($products);
 ```
+The return will be like this
 ![Default Preview](https://forward-web.com/uploads/default.png)
 
 ### Usage with custom options
@@ -62,6 +63,7 @@ $options = array('json' => TRUE, 'label' => 'Products list', 'bg_color' => '#1B1
 # call the function with your custom options
 nice_dump($products, $options);
 ```
+The return will be like this
 ![Default Preview](https://forward-web.com/uploads/custom-options.png)
 
 ### Available Options
