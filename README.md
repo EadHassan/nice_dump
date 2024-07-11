@@ -25,7 +25,7 @@ $products = array(
     'desc'    => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
     'price'   => '75.00',
     'status'  => 1,
-    'category => 1,
+    'category' => 1,
     'created' => '2019-03-17 06:25:00'
   ),
   array(
@@ -34,7 +34,7 @@ $products = array(
     'desc'    => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
     'price'   => '50.00',
     'status'  => 1,
-    'category => 3,
+    'category' => 3,
     'created' => '2019-03-17 06:25:05'
   ),
   array(
@@ -43,17 +43,17 @@ $products = array(
     'desc'    => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
     'price'   => '90.50',
     'status'  => 0,
-    'category => 2,
+    'category' => 2,
     'created' => '2019-03-17 06:27:12'
   )
-};
+);
 ```
 ### Simple usage
 ```php
 nice_dump($products);
 ```
 The return will be like this
-![Default Preview](https://forward-web.com/uploads/default.png)
+![Default Preview](https://ibb.co/C2bvxR2)
 
 ### Usage with custom options
 ```php
@@ -64,7 +64,7 @@ $options = array('json' => TRUE, 'label' => 'Products list', 'bg_color' => '#1B1
 nice_dump($products, $options);
 ```
 The return will be like this
-![Default Preview](https://forward-web.com/uploads/custom-options.png)
+![Default Preview](https://i.ibb.co/71227x7/advanced-nice-dump.jpg)
 
 ### Available Options
 | Option Name        | Type            | Accepted values  | Default Value   |
